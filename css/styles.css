@@ -184,6 +184,9 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 /* -------------------------------------------studio main---------------------------- */
 .first-section {
   background-color: #212121;
@@ -514,7 +517,11 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-
+.work-examples-item:hover,
+.work-examples-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .work-examples-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
