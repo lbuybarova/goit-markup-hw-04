@@ -141,9 +141,17 @@ body {
   color: var(--accent-color);
 }
 
+.header-icon {
+  margin-right: 10px;
+}
+
 .contacts-list {
   display: flex;
   margin-left: auto;
+  fill: var(--accent-color);
+  align-items: center;
+}
+.contacts-item {
 }
 
 .contacts-item:not(:last-child) {
@@ -173,10 +181,6 @@ body {
 
 .header-mail:hover,
 .header-mail:focus {
-  color: var(--accent-color);
-}
-
-.current {
   color: var(--accent-color);
 }
 
@@ -236,6 +240,26 @@ body {
 .second-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-list-item {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.icons-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.reasons-icon {
 }
 
 .reasons-list {
@@ -416,6 +440,11 @@ body {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
 }
 
 .clients-link {
