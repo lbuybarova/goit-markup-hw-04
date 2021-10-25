@@ -143,6 +143,7 @@ body {
 
 .header-icon {
   margin-right: 10px;
+  fill: #757575;
 }
 
 .contacts-list {
@@ -150,8 +151,6 @@ body {
   margin-left: auto;
   fill: var(--accent-color);
   align-items: center;
-}
-.contacts-item {
 }
 
 .contacts-item:not(:last-child) {
@@ -169,6 +168,7 @@ body {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-mail {
@@ -182,6 +182,7 @@ body {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .current {
@@ -247,22 +248,19 @@ body {
 
 .icons-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.icons-list-item {
+.icons-box {
   background-color: #f5f4fa;
+  border-radius: 4px;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  align-items: center;
-}
-.icons-list-item:not(:last-child) {
-  margin-right: 30px;
+  padding: 25px 100px;
 }
 
-.reasons-icon {
+.icons-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .reasons-list {
@@ -411,6 +409,7 @@ body {
 .social-icon {
   fill: #afb1b8;
 }
+/* --------------------------------------------Постоянные клиенты------------------------------------------ */
 
 .fifth-section {
   padding-top: 94px;
@@ -445,11 +444,6 @@ body {
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--accent-color);
-}
-
 .clients-link {
   width: 100%;
   height: 100%;
@@ -457,12 +451,14 @@ body {
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
 .clients-icon {
   fill: #afb1b8;
 }
+
 /* ----------------------------------portfolio main----------------------- */
 .portfolio-section {
   padding-top: 94px;
@@ -599,4 +595,62 @@ body {
 .address:hover,
 .address:focus {
   color: var(--accent-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+.footer-socials {
+  align-items: baseline;
+}
+
+.connect-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  margin-bottom: 20px;
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-item {
+  width: 44px;
+  height: 44px;
+}
+
+.connect-item:not(:last-child) {
+  margin-right: 10px;
+}
+.connect-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-link:hover,
+.connect-link:focus {
+  background-color: var(--accent-color);
+}
+
+.connect-link:hover .connect-icon,
+.connect-link:focus .connect-icon {
+  fill: #ffffff;
+}
+
+.connect-icon {
+  fill: #ffffff;
 }
